@@ -1,0 +1,336 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "Perfiles Educativos NEAE / DSM-5",
+    "version": "1.0.0",
+    "description": "API simulada para consultar descripciones, dificultades, necesidades y orientaciones educativas por perfil NEAE basado en DSM-5."
+  },
+  "servers": [
+    {
+      "url": "https://api.perfiles.educativos.simulada.es",
+      "description": "Servidor simulado de perfiles NEAE"
+    }
+  ],
+  "paths": {
+    "/perfiles/tdah": {
+      "get": {
+        "summary": "Consultar perfil educativo: Trastorno por Déficit de Atención con Hiperactividad",
+        "operationId": "getPerfilTdah",
+        "responses": {
+          "200": {
+            "description": "Información educativa sobre el perfil Trastorno por Déficit de Atención con Hiperactividad",
+            "content": {
+              "application/json": {
+                "example": {
+                  "perfil": "Trastorno por Déficit de Atención con Hiperactividad",
+                  "descripcion_funcional": "Descripción funcional educativa del perfil.",
+                  "dificultades_escolares": [
+                    "Dificultad 1",
+                    "Dificultad 2"
+                  ],
+                  "necesidades_especificas": [
+                    "Necesidad 1",
+                    "Necesidad 2"
+                  ],
+                  "orientaciones_metodologicas": [
+                    "Orientación 1",
+                    "Orientación 2"
+                  ],
+                  "evaluacion_adaptada": [
+                    "Evaluación 1",
+                    "Evaluación 2"
+                  ],
+                  "indicadores_observables": [
+                    "Indicador 1",
+                    "Indicador 2"
+                  ],
+                  "normativa_relacionada": "Artículo X, LOMLOE / Guía INTEF 2023"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/perfiles/tea-nivel1": {
+      "get": {
+        "summary": "Consultar perfil educativo: Trastorno del Espectro Autista - Nivel 1",
+        "operationId": "getPerfilTeanivel1",
+        "responses": {
+          "200": {
+            "description": "Información educativa sobre el perfil Trastorno del Espectro Autista - Nivel 1",
+            "content": {
+              "application/json": {
+                "example": {
+                  "perfil": "Trastorno del Espectro Autista - Nivel 1",
+                  "descripcion_funcional": "Descripción funcional educativa del perfil.",
+                  "dificultades_escolares": [
+                    "Dificultad 1",
+                    "Dificultad 2"
+                  ],
+                  "necesidades_especificas": [
+                    "Necesidad 1",
+                    "Necesidad 2"
+                  ],
+                  "orientaciones_metodologicas": [
+                    "Orientación 1",
+                    "Orientación 2"
+                  ],
+                  "evaluacion_adaptada": [
+                    "Evaluación 1",
+                    "Evaluación 2"
+                  ],
+                  "indicadores_observables": [
+                    "Indicador 1",
+                    "Indicador 2"
+                  ],
+                  "normativa_relacionada": "Artículo X, LOMLOE / Guía INTEF 2023"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/perfiles/dislexia": {
+      "get": {
+        "summary": "Consultar perfil educativo: Dislexia",
+        "operationId": "getPerfilDislexia",
+        "responses": {
+          "200": {
+            "description": "Información educativa sobre el perfil Dislexia",
+            "content": {
+              "application/json": {
+                "example": {
+                  "perfil": "Dislexia",
+                  "descripcion_funcional": "Descripción funcional educativa del perfil.",
+                  "dificultades_escolares": [
+                    "Dificultad 1",
+                    "Dificultad 2"
+                  ],
+                  "necesidades_especificas": [
+                    "Necesidad 1",
+                    "Necesidad 2"
+                  ],
+                  "orientaciones_metodologicas": [
+                    "Orientación 1",
+                    "Orientación 2"
+                  ],
+                  "evaluacion_adaptada": [
+                    "Evaluación 1",
+                    "Evaluación 2"
+                  ],
+                  "indicadores_observables": [
+                    "Indicador 1",
+                    "Indicador 2"
+                  ],
+                  "normativa_relacionada": "Artículo X, LOMLOE / Guía INTEF 2023"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/perfiles/discalculia": {
+      "get": {
+        "summary": "Consultar perfil educativo: Discalculia",
+        "operationId": "getPerfilDiscalculia",
+        "responses": {
+          "200": {
+            "description": "Información educativa sobre el perfil Discalculia",
+            "content": {
+              "application/json": {
+                "example": {
+                  "perfil": "Discalculia",
+                  "descripcion_funcional": "Descripción funcional educativa del perfil.",
+                  "dificultades_escolares": [
+                    "Dificultad 1",
+                    "Dificultad 2"
+                  ],
+                  "necesidades_especificas": [
+                    "Necesidad 1",
+                    "Necesidad 2"
+                  ],
+                  "orientaciones_metodologicas": [
+                    "Orientación 1",
+                    "Orientación 2"
+                  ],
+                  "evaluacion_adaptada": [
+                    "Evaluación 1",
+                    "Evaluación 2"
+                  ],
+                  "indicadores_observables": [
+                    "Indicador 1",
+                    "Indicador 2"
+                  ],
+                  "normativa_relacionada": "Artículo X, LOMLOE / Guía INTEF 2023"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/perfiles/tiempo-cognitivo-lento": {
+      "get": {
+        "summary": "Consultar perfil educativo: Tiempo Cognitivo Lento",
+        "operationId": "getPerfilTiempocognitivolento",
+        "responses": {
+          "200": {
+            "description": "Información educativa sobre el perfil Tiempo Cognitivo Lento",
+            "content": {
+              "application/json": {
+                "example": {
+                  "perfil": "Tiempo Cognitivo Lento",
+                  "descripcion_funcional": "Descripción funcional educativa del perfil.",
+                  "dificultades_escolares": [
+                    "Dificultad 1",
+                    "Dificultad 2"
+                  ],
+                  "necesidades_especificas": [
+                    "Necesidad 1",
+                    "Necesidad 2"
+                  ],
+                  "orientaciones_metodologicas": [
+                    "Orientación 1",
+                    "Orientación 2"
+                  ],
+                  "evaluacion_adaptada": [
+                    "Evaluación 1",
+                    "Evaluación 2"
+                  ],
+                  "indicadores_observables": [
+                    "Indicador 1",
+                    "Indicador 2"
+                  ],
+                  "normativa_relacionada": "Artículo X, LOMLOE / Guía INTEF 2023"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/perfiles/tnd": {
+      "get": {
+        "summary": "Consultar perfil educativo: Trastorno Negativista Desafiante",
+        "operationId": "getPerfilTnd",
+        "responses": {
+          "200": {
+            "description": "Información educativa sobre el perfil Trastorno Negativista Desafiante",
+            "content": {
+              "application/json": {
+                "example": {
+                  "perfil": "Trastorno Negativista Desafiante",
+                  "descripcion_funcional": "Descripción funcional educativa del perfil.",
+                  "dificultades_escolares": [
+                    "Dificultad 1",
+                    "Dificultad 2"
+                  ],
+                  "necesidades_especificas": [
+                    "Necesidad 1",
+                    "Necesidad 2"
+                  ],
+                  "orientaciones_metodologicas": [
+                    "Orientación 1",
+                    "Orientación 2"
+                  ],
+                  "evaluacion_adaptada": [
+                    "Evaluación 1",
+                    "Evaluación 2"
+                  ],
+                  "indicadores_observables": [
+                    "Indicador 1",
+                    "Indicador 2"
+                  ],
+                  "normativa_relacionada": "Artículo X, LOMLOE / Guía INTEF 2023"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/perfiles/tlp": {
+      "get": {
+        "summary": "Consultar perfil educativo: Trastorno Límite de la Personalidad",
+        "operationId": "getPerfilTlp",
+        "responses": {
+          "200": {
+            "description": "Información educativa sobre el perfil Trastorno Límite de la Personalidad",
+            "content": {
+              "application/json": {
+                "example": {
+                  "perfil": "Trastorno Límite de la Personalidad",
+                  "descripcion_funcional": "Descripción funcional educativa del perfil.",
+                  "dificultades_escolares": [
+                    "Dificultad 1",
+                    "Dificultad 2"
+                  ],
+                  "necesidades_especificas": [
+                    "Necesidad 1",
+                    "Necesidad 2"
+                  ],
+                  "orientaciones_metodologicas": [
+                    "Orientación 1",
+                    "Orientación 2"
+                  ],
+                  "evaluacion_adaptada": [
+                    "Evaluación 1",
+                    "Evaluación 2"
+                  ],
+                  "indicadores_observables": [
+                    "Indicador 1",
+                    "Indicador 2"
+                  ],
+                  "normativa_relacionada": "Artículo X, LOMLOE / Guía INTEF 2023"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/perfiles/aacc": {
+      "get": {
+        "summary": "Consultar perfil educativo: Altas Capacidades Intelectuales",
+        "operationId": "getPerfilAacc",
+        "responses": {
+          "200": {
+            "description": "Información educativa sobre el perfil Altas Capacidades Intelectuales",
+            "content": {
+              "application/json": {
+                "example": {
+                  "perfil": "Altas Capacidades Intelectuales",
+                  "descripcion_funcional": "Descripción funcional educativa del perfil.",
+                  "dificultades_escolares": [
+                    "Dificultad 1",
+                    "Dificultad 2"
+                  ],
+                  "necesidades_especificas": [
+                    "Necesidad 1",
+                    "Necesidad 2"
+                  ],
+                  "orientaciones_metodologicas": [
+                    "Orientación 1",
+                    "Orientación 2"
+                  ],
+                  "evaluacion_adaptada": [
+                    "Evaluación 1",
+                    "Evaluación 2"
+                  ],
+                  "indicadores_observables": [
+                    "Indicador 1",
+                    "Indicador 2"
+                  ],
+                  "normativa_relacionada": "Artículo X, LOMLOE / Guía INTEF 2023"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
