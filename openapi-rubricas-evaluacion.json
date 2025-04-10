@@ -1,0 +1,164 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "Banco de Rúbricas Adaptadas",
+    "version": "1.0.0",
+    "description": "API simulada para consultar rúbricas de evaluación por curso, materia y perfil NEAE (DSM-5) en el marco de la LOMLOE."
+  },
+  "servers": [
+    {
+      "url": "https://api.rubricas.simulada.es",
+      "description": "Servidor simulado de rúbricas educativas"
+    }
+  ],
+  "paths": {
+    "/rubricas/1eso/lengua/general": {
+      "get": {
+        "summary": "Consultar rúbrica para Lengua en 1ESO (GENERAL)",
+        "operationId": "getRubrica1esoLenguaGeneral",
+        "responses": {
+          "200": {
+            "description": "Rúbrica de evaluación adaptada",
+            "content": {
+              "application/json": {
+                "example": {
+                  "curso": "1ESO",
+                  "materia": "Lengua",
+                  "perfil": "general",
+                  "instrumento": "Trabajo escrito / Exposición oral / Resolución de problemas",
+                  "criterios": [
+                    "Claridad en la expresión de ideas",
+                    "Corrección ortográfica y gramatical (con adaptación para dislexia si procede)",
+                    "Adecuación al tema propuesto",
+                    "Uso de vocabulario específico"
+                  ],
+                  "niveles": {
+                    "excelente": "Cumple todos los criterios con gran calidad y autonomía.",
+                    "adecuado": "Cumple la mayoría de criterios con corrección.",
+                    "en_desarrollo": "Muestra dificultades en varios aspectos, requiere apoyo."
+                  },
+                  "adaptaciones": [
+                    "Permitir entrega oral o audio para dislexia.",
+                    "Reducir número de ítems por sobrecarga cognitiva en TDAH.",
+                    "Dar anticipación visual y tiempo extra en TEA nivel 1."
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/rubricas/2eso/historia/dislexia": {
+      "get": {
+        "summary": "Consultar rúbrica para Historia en 2ESO (DISLEXIA)",
+        "operationId": "getRubrica2esoHistoriaDislexia",
+        "responses": {
+          "200": {
+            "description": "Rúbrica de evaluación adaptada",
+            "content": {
+              "application/json": {
+                "example": {
+                  "curso": "2ESO",
+                  "materia": "Historia",
+                  "perfil": "dislexia",
+                  "instrumento": "Trabajo escrito / Exposición oral / Resolución de problemas",
+                  "criterios": [
+                    "Claridad en la expresión de ideas",
+                    "Corrección ortográfica y gramatical (con adaptación para dislexia si procede)",
+                    "Adecuación al tema propuesto",
+                    "Uso de vocabulario específico"
+                  ],
+                  "niveles": {
+                    "excelente": "Cumple todos los criterios con gran calidad y autonomía.",
+                    "adecuado": "Cumple la mayoría de criterios con corrección.",
+                    "en_desarrollo": "Muestra dificultades en varios aspectos, requiere apoyo."
+                  },
+                  "adaptaciones": [
+                    "Permitir entrega oral o audio para dislexia.",
+                    "Reducir número de ítems por sobrecarga cognitiva en TDAH.",
+                    "Dar anticipación visual y tiempo extra en TEA nivel 1."
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/rubricas/3eso/matematicas/tdah": {
+      "get": {
+        "summary": "Consultar rúbrica para Matematicas en 3ESO (TDAH)",
+        "operationId": "getRubrica3esoMatematicasTdah",
+        "responses": {
+          "200": {
+            "description": "Rúbrica de evaluación adaptada",
+            "content": {
+              "application/json": {
+                "example": {
+                  "curso": "3ESO",
+                  "materia": "Matematicas",
+                  "perfil": "tdah",
+                  "instrumento": "Trabajo escrito / Exposición oral / Resolución de problemas",
+                  "criterios": [
+                    "Claridad en la expresión de ideas",
+                    "Corrección ortográfica y gramatical (con adaptación para dislexia si procede)",
+                    "Adecuación al tema propuesto",
+                    "Uso de vocabulario específico"
+                  ],
+                  "niveles": {
+                    "excelente": "Cumple todos los criterios con gran calidad y autonomía.",
+                    "adecuado": "Cumple la mayoría de criterios con corrección.",
+                    "en_desarrollo": "Muestra dificultades en varios aspectos, requiere apoyo."
+                  },
+                  "adaptaciones": [
+                    "Permitir entrega oral o audio para dislexia.",
+                    "Reducir número de ítems por sobrecarga cognitiva en TDAH.",
+                    "Dar anticipación visual y tiempo extra en TEA nivel 1."
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/rubricas/4eso/ingles/tea-nivel1": {
+      "get": {
+        "summary": "Consultar rúbrica para Ingles en 4ESO (TEA-NIVEL1)",
+        "operationId": "getRubrica4esoInglesTeanivel1",
+        "responses": {
+          "200": {
+            "description": "Rúbrica de evaluación adaptada",
+            "content": {
+              "application/json": {
+                "example": {
+                  "curso": "4ESO",
+                  "materia": "Ingles",
+                  "perfil": "tea-nivel1",
+                  "instrumento": "Trabajo escrito / Exposición oral / Resolución de problemas",
+                  "criterios": [
+                    "Claridad en la expresión de ideas",
+                    "Corrección ortográfica y gramatical (con adaptación para dislexia si procede)",
+                    "Adecuación al tema propuesto",
+                    "Uso de vocabulario específico"
+                  ],
+                  "niveles": {
+                    "excelente": "Cumple todos los criterios con gran calidad y autonomía.",
+                    "adecuado": "Cumple la mayoría de criterios con corrección.",
+                    "en_desarrollo": "Muestra dificultades en varios aspectos, requiere apoyo."
+                  },
+                  "adaptaciones": [
+                    "Permitir entrega oral o audio para dislexia.",
+                    "Reducir número de ítems por sobrecarga cognitiva en TDAH.",
+                    "Dar anticipación visual y tiempo extra en TEA nivel 1."
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
