@@ -1,0 +1,62 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "Plan de Actuación Personalizada (PAP) – Ejemplo Dislexia 2º ESO Lengua",
+    "version": "1.0.0",
+    "description": "Ejemplo de una ruta simulada en la API que estructura la respuesta de un PAP para un alumno con dislexia en 2º de ESO en la asignatura de Lengua Castellana."
+  },
+  "servers": [
+    {
+      "url": "https://api.pap.simulada.es",
+      "description": "Servidor simulado de PAP educativos"
+    }
+  ],
+  "paths": {
+    "/pap/dislexia/2eso/lengua": {
+      "get": {
+        "summary": "PAP adaptado para Dislexia en Lengua – 2º ESO",
+        "operationId": "getPAPDislexia2esoLengua",
+        "responses": {
+          "200": {
+            "description": "Modelo de PAP con contenido simulado",
+            "content": {
+              "application/json": {
+                "example": {
+                  "perfil": "Dislexia",
+                  "curso": "2º ESO",
+                  "asignatura": "Lengua Castellana y Literatura",
+                  "descripcion_funcional": "Dificultades específicas en la decodificación de palabras, lectura fluida y ortografía, con impacto en la comprensión y expresión escrita.",
+                  "dificultades": [
+                    "Lectura lenta y con errores.",
+                    "Problemas de comprensión de textos escritos largos.",
+                    "Frecuentes errores ortográficos y confusiones fonológicas.",
+                    "Fatiga lectora."
+                  ],
+                  "necesidades": [
+                    "Material adaptado con tipografía clara (OpenDyslexic, Comic Sans).",
+                    "Tiempo extra en tareas lectoras y pruebas escritas.",
+                    "Refuerzo fonológico y visual.",
+                    "Evaluación centrada en el contenido, no en la ortografía."
+                  ],
+                  "medidas_metodologicas": [
+                    "Uso de textos fragmentados y apoyos visuales.",
+                    "Lectura guiada con audio y preguntas intermedias.",
+                    "Trabajo cooperativo en actividades de comprensión.",
+                    "Dictados autoevaluables con apoyo de corrector."
+                  ],
+                  "evaluacion_adaptada": [
+                    "Permitir respuesta oral como alternativa.",
+                    "No penalizar errores ortográficos sistemáticos.",
+                    "Ampliación de tiempo en pruebas escritas.",
+                    "Evaluación por rúbrica con foco en contenidos."
+                  ],
+                  "normativa": "RD 217/2022, artículo 11.3; Instrucciones de Atención a la Diversidad CCAA"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
