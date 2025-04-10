@@ -1,0 +1,320 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "API simulada de PAP por perfil NEAE – ESO",
+    "version": "1.0.0",
+    "description": "Contiene rutas simuladas para Planes de Actuación Personalizada adaptados por perfil DSM-5/NEAE, curso y asignatura en Educación Secundaria Obligatoria."
+  },
+  "servers": [
+    {
+      "url": "https://api.pap.simulada.es",
+      "description": "Servidor simulado de PAP educativos"
+    }
+  ],
+  "paths": {
+    "/pap/dislexia/2eso/lengua": {
+      "get": {
+        "summary": "PAP para DISLEXIA en 2ESO – Lengua",
+        "operationId": "getPAPDislexia2ESOLengua",
+        "responses": {
+          "200": {
+            "description": "Contenido estructurado del PAP",
+            "content": {
+              "application/json": {
+                "example": {
+                  "perfil": "dislexia",
+                  "curso": "2ESO",
+                  "asignatura": "Lengua",
+                  "descripcion_funcional": "Ejemplo de descripción funcional educativa del perfil.",
+                  "dificultades": [
+                    "Dificultad 1",
+                    "Dificultad 2"
+                  ],
+                  "necesidades": [
+                    "Necesidad 1",
+                    "Necesidad 2"
+                  ],
+                  "medidas_metodologicas": [
+                    "Medida 1",
+                    "Medida 2"
+                  ],
+                  "evaluacion_adaptada": [
+                    "Evaluación 1",
+                    "Evaluación 2"
+                  ],
+                  "normativa": "Artículo X del RD 217/2022 y orientaciones NEAE autonómicas."
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/pap/tdah/3eso/biologia": {
+      "get": {
+        "summary": "PAP para TDAH en 3ESO – Biologia",
+        "operationId": "getPAPTdah3ESOBiologia",
+        "responses": {
+          "200": {
+            "description": "Contenido estructurado del PAP",
+            "content": {
+              "application/json": {
+                "example": {
+                  "perfil": "tdah",
+                  "curso": "3ESO",
+                  "asignatura": "Biologia",
+                  "descripcion_funcional": "Ejemplo de descripción funcional educativa del perfil.",
+                  "dificultades": [
+                    "Dificultad 1",
+                    "Dificultad 2"
+                  ],
+                  "necesidades": [
+                    "Necesidad 1",
+                    "Necesidad 2"
+                  ],
+                  "medidas_metodologicas": [
+                    "Medida 1",
+                    "Medida 2"
+                  ],
+                  "evaluacion_adaptada": [
+                    "Evaluación 1",
+                    "Evaluación 2"
+                  ],
+                  "normativa": "Artículo X del RD 217/2022 y orientaciones NEAE autonómicas."
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/pap/tea-nivel1/1eso/ingles": {
+      "get": {
+        "summary": "PAP para TEA-NIVEL1 en 1ESO – Ingles",
+        "operationId": "getPAPTeanivel11ESOIngles",
+        "responses": {
+          "200": {
+            "description": "Contenido estructurado del PAP",
+            "content": {
+              "application/json": {
+                "example": {
+                  "perfil": "tea-nivel1",
+                  "curso": "1ESO",
+                  "asignatura": "Ingles",
+                  "descripcion_funcional": "Ejemplo de descripción funcional educativa del perfil.",
+                  "dificultades": [
+                    "Dificultad 1",
+                    "Dificultad 2"
+                  ],
+                  "necesidades": [
+                    "Necesidad 1",
+                    "Necesidad 2"
+                  ],
+                  "medidas_metodologicas": [
+                    "Medida 1",
+                    "Medida 2"
+                  ],
+                  "evaluacion_adaptada": [
+                    "Evaluación 1",
+                    "Evaluación 2"
+                  ],
+                  "normativa": "Artículo X del RD 217/2022 y orientaciones NEAE autonómicas."
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/pap/discalculia/2eso/matematicas": {
+      "get": {
+        "summary": "PAP para DISCALCULIA en 2ESO – Matematicas",
+        "operationId": "getPAPDiscalculia2ESOMatematicas",
+        "responses": {
+          "200": {
+            "description": "Contenido estructurado del PAP",
+            "content": {
+              "application/json": {
+                "example": {
+                  "perfil": "discalculia",
+                  "curso": "2ESO",
+                  "asignatura": "Matematicas",
+                  "descripcion_funcional": "Ejemplo de descripción funcional educativa del perfil.",
+                  "dificultades": [
+                    "Dificultad 1",
+                    "Dificultad 2"
+                  ],
+                  "necesidades": [
+                    "Necesidad 1",
+                    "Necesidad 2"
+                  ],
+                  "medidas_metodologicas": [
+                    "Medida 1",
+                    "Medida 2"
+                  ],
+                  "evaluacion_adaptada": [
+                    "Evaluación 1",
+                    "Evaluación 2"
+                  ],
+                  "normativa": "Artículo X del RD 217/2022 y orientaciones NEAE autonómicas."
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/pap/tiempo-cognitivo-lento/3eso/historia": {
+      "get": {
+        "summary": "PAP para TIEMPO-COGNITIVO-LENTO en 3ESO – Historia",
+        "operationId": "getPAPTiempocognitivolento3ESOHistoria",
+        "responses": {
+          "200": {
+            "description": "Contenido estructurado del PAP",
+            "content": {
+              "application/json": {
+                "example": {
+                  "perfil": "tiempo-cognitivo-lento",
+                  "curso": "3ESO",
+                  "asignatura": "Historia",
+                  "descripcion_funcional": "Ejemplo de descripción funcional educativa del perfil.",
+                  "dificultades": [
+                    "Dificultad 1",
+                    "Dificultad 2"
+                  ],
+                  "necesidades": [
+                    "Necesidad 1",
+                    "Necesidad 2"
+                  ],
+                  "medidas_metodologicas": [
+                    "Medida 1",
+                    "Medida 2"
+                  ],
+                  "evaluacion_adaptada": [
+                    "Evaluación 1",
+                    "Evaluación 2"
+                  ],
+                  "normativa": "Artículo X del RD 217/2022 y orientaciones NEAE autonómicas."
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/pap/tnd/1eso/educacion-fisica": {
+      "get": {
+        "summary": "PAP para TND en 1ESO – Educacion-Fisica",
+        "operationId": "getPAPTnd1ESOEducacion-fisica",
+        "responses": {
+          "200": {
+            "description": "Contenido estructurado del PAP",
+            "content": {
+              "application/json": {
+                "example": {
+                  "perfil": "tnd",
+                  "curso": "1ESO",
+                  "asignatura": "Educacion Fisica",
+                  "descripcion_funcional": "Ejemplo de descripción funcional educativa del perfil.",
+                  "dificultades": [
+                    "Dificultad 1",
+                    "Dificultad 2"
+                  ],
+                  "necesidades": [
+                    "Necesidad 1",
+                    "Necesidad 2"
+                  ],
+                  "medidas_metodologicas": [
+                    "Medida 1",
+                    "Medida 2"
+                  ],
+                  "evaluacion_adaptada": [
+                    "Evaluación 1",
+                    "Evaluación 2"
+                  ],
+                  "normativa": "Artículo X del RD 217/2022 y orientaciones NEAE autonómicas."
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/pap/tlp/4eso/valores-eticos": {
+      "get": {
+        "summary": "PAP para TLP en 4ESO – Valores-Eticos",
+        "operationId": "getPAPTlp4ESOValores-eticos",
+        "responses": {
+          "200": {
+            "description": "Contenido estructurado del PAP",
+            "content": {
+              "application/json": {
+                "example": {
+                  "perfil": "tlp",
+                  "curso": "4ESO",
+                  "asignatura": "Valores Eticos",
+                  "descripcion_funcional": "Ejemplo de descripción funcional educativa del perfil.",
+                  "dificultades": [
+                    "Dificultad 1",
+                    "Dificultad 2"
+                  ],
+                  "necesidades": [
+                    "Necesidad 1",
+                    "Necesidad 2"
+                  ],
+                  "medidas_metodologicas": [
+                    "Medida 1",
+                    "Medida 2"
+                  ],
+                  "evaluacion_adaptada": [
+                    "Evaluación 1",
+                    "Evaluación 2"
+                  ],
+                  "normativa": "Artículo X del RD 217/2022 y orientaciones NEAE autonómicas."
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/pap/aacc/2eso/tecnologia": {
+      "get": {
+        "summary": "PAP para AACC en 2ESO – Tecnologia",
+        "operationId": "getPAPAacc2ESOTecnologia",
+        "responses": {
+          "200": {
+            "description": "Contenido estructurado del PAP",
+            "content": {
+              "application/json": {
+                "example": {
+                  "perfil": "aacc",
+                  "curso": "2ESO",
+                  "asignatura": "Tecnologia",
+                  "descripcion_funcional": "Ejemplo de descripción funcional educativa del perfil.",
+                  "dificultades": [
+                    "Dificultad 1",
+                    "Dificultad 2"
+                  ],
+                  "necesidades": [
+                    "Necesidad 1",
+                    "Necesidad 2"
+                  ],
+                  "medidas_metodologicas": [
+                    "Medida 1",
+                    "Medida 2"
+                  ],
+                  "evaluacion_adaptada": [
+                    "Evaluación 1",
+                    "Evaluación 2"
+                  ],
+                  "normativa": "Artículo X del RD 217/2022 y orientaciones NEAE autonómicas."
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
