@@ -1,0 +1,96 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "API Currículo Bachillerato Simulado",
+    "version": "1.0.0",
+    "description": "API de consulta del currículo LOMLOE para Bachillerato. Incluye materias, competencias, saberes y criterios por curso y materia. Uso educativo simulado."
+  },
+  "servers": [
+    {
+      "url": "https://api.curriculo.bachillerato.simulado.es"
+    }
+  ],
+  "paths": {
+    "/curriculo/bachillerato/{curso}/{materia}/{bloque}": {
+      "get": {
+        "operationId": "getBloqueCurricularBachillerato",
+        "summary": "Consultar bloques curriculares para Bachillerato",
+        "parameters": [
+          {
+            "name": "curso",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "1",
+                "2"
+              ]
+            },
+            "description": "Curso de Bachillerato (1 o 2)"
+          },
+          {
+            "name": "materia",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "example": "economia"
+            },
+            "description": "Materia según denominación oficial"
+          },
+          {
+            "name": "bloque",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "competencias",
+                "saberes",
+                "criterios"
+              ]
+            },
+            "description": "Tipo de información curricular a consultar"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Datos curriculares obtenidos correctamente",
+            "content": {
+              "application/json": {
+                "examples": {
+                  "competencias": {
+                    "summary": "Competencias específicas de Economía 1º Bachillerato",
+                    "value": [
+                      "Analizar agentes económicos y sus interacciones.",
+                      "Interpretar datos económicos en diferentes formatos.",
+                      "Formular juicios críticos sobre sostenibilidad económica."
+                    ]
+                  },
+                  "saberes": {
+                    "summary": "Saberes básicos Economía 1º Bachillerato",
+                    "value": [
+                      "La escasez y los factores de producción.",
+                      "Oferta y demanda. Funcionamiento del mercado.",
+                      "Políticas públicas y redistribución.",
+                      "Economía global y desarrollo sostenible."
+                    ]
+                  },
+                  "criterios": {
+                    "summary": "Criterios de evaluación Economía 1º Bachillerato",
+                    "value": [
+                      "Explicar conceptos básicos usando ejemplos reales.",
+                      "Analizar situaciones económicas sencillas con lenguaje técnico.",
+                      "Valorar críticamente modelos de organización económica."
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
