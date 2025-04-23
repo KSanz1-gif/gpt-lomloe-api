@@ -1,20 +1,14 @@
+## Política de Privacidad – GPT educativo personalizado
 
-# Política de Privacidad – GPT Educativo
+Este agente conversacional ha sido diseñado con finalidad exclusivamente educativa. No recopila, almacena ni solicita datos personales identificativos de los usuarios. Todas las interacciones están orientadas a la generación de contenido pedagógico normativo, siguiendo los principios de la LOMLOE.
 
-Este asistente virtual ha sido desarrollado con fines estrictamente educativos y profesionales. No recoge, almacena ni procesa información personal de los usuarios.
+Este GPT puede acceder, con permiso del usuario, a **recursos externos simulados** mediante el uso de **acciones API educativas estructuradas**, diseñadas para facilitar la consulta del currículo oficial de ESO y Bachillerato, entre otros. Estas conexiones externas:
+- No extraen ni comparten información personal.
+- No identifican a los usuarios.
+- Solo permiten recuperar contenido curricular como competencias, saberes y criterios, de forma estructurada y anonimizada.
 
-## Finalidad del asistente
-El objetivo de este GPT es asistir a docentes en la elaboración, revisión y adaptación de documentos pedagógicos conforme al marco normativo vigente. Las acciones externas utilizadas están diseñadas únicamente para estructurar contenido educativo, sin recopilar datos del usuario.
+El uso de estas acciones cumple con los principios de protección de datos al no implicar tratamiento de información personal ni seguimiento del usuario. El acceso a estos recursos externos solo se activa cuando el usuario da su consentimiento explícito.
 
-## Uso de acciones conectadas (API)
-Algunas funciones del asistente consultan fuentes externas estructuradas (por ejemplo, rutas curriculares simuladas o modelos de planificación docente). Estas consultas **no transmiten ni recogen información personal**, ni permiten identificar al usuario.
+Este proyecto está alojado en una plataforma segura, con fines docentes y sin ánimo de lucro.
 
-## Limitaciones
-Este asistente no emite diagnósticos clínicos, no sustituye el juicio profesional docente ni terapéutico, y su contenido debe ser interpretado como orientación académica general.
-
-## Responsable del contenido
-- Nombre: Equipo de desarrollo educativo (docente responsable)
-- Contacto: [Introduce tu correo institucional o formulario si lo deseas]
-
-## Última actualización
-Abril de 2025
+Última actualización: abril de 2025.
